@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emina Mesić</title>
+    <link rel="stylesheet" type="text/css" href="asking.css">
+</head>
+<body style="background: url(gif5.gif); background-repeat: auto; background-size: cover;">
+    <div class="container">
+        <h1>Oh nice choice I like it, where do you wanna go though?</h1>
+        <div class="buttons">
+            <button style="background-color: #001D69; color:white;" id="yes-btn" onclick="window.location.href='https://open.spotify.com/playlist/6GR7FUgUSSW3MDMtz7h0oV?si=b909423b1648446d&pt=9fcbc4d7438e4fe68d147190ddbf446d'">Choose our playlist :D</button>
+<br>
+
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" style="display: ; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2; cursor: pointer;">
+        <div style="width: 300px; height: 200px; margin: 20% auto; background: white; padding: 20px; text-align: center;">
+            <h1 style="color:black;">Do you want to choose our music playlist?</h1>
+            <button onclick="closePopup()">YES</button>
+            <button onclick="closePopup()">no</button>
+        </div>
+    </div>
+
+    <audio autoplay loop>
+        <source src="prey.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+    <script>
+    function openPopup() {
+        document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+    </script>
+<audio id="myAudio" loop>
+    <source src="sng1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+document.body.addEventListener('click', function () {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+});
+</script>
+</body>
+</html>

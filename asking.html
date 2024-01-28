@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date?</title>
+    <link rel="stylesheet" type="text/css" href="asking.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Emina Mesić, will you go out with me?</h1>
+        <div class="buttons">
+            <button id="no-btn" onclick="window.location.href='web1.html'">No</button>
+            <button id="yes-btn" onclick="window.location.href='web2.html'">Yes</button>
+        </div>
+        <div class="popup" id="popup">
+            <p>yesssssssssssssssssssssssssss!!!</p>
+        </div>
+    </div>
+
+<button style="margin-top:660px;" onclick="playAudio()" type="button"></button>
+
+<audio id="myAudio" loop>
+    <source src="ev1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+document.body.addEventListener('click', function () {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+});
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
